@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5faff" />
+  <meta name="description" content="GRADS4GRADS brings your subjects, study materials and practice together in one calm, organized space." />
+  <title>GRADS4GRADS — A brighter way to learn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{color-scheme:light;--ink:#203959;--navy:#142e52;--muted:#69809c;--blue:#477fc6;--blue-dark:#3069b6;--sky:#e7f3ff;--sky-soft:#f4f9ff;--line:#dceaf7;--white:#fff;--shadow:0 20px 56px rgba(72,113,167,.10)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#f9fcff;color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    button{font:inherit}
+    .container{max-width:1180px;padding:0 28px;margin:auto}
+    .site-top{background:linear-gradient(125deg,#f8fcff 6%,#edf6ff 57%,#e1f0ff 100%);overflow:hidden;position:relative}
+    .site-top:before{content:"";position:absolute;width:580px;height:580px;border-radius:50%;right:-215px;top:90px;background:radial-gradient(circle,#d0e9ff 0%,rgba(208,233,255,0) 68%);pointer-events:none}
+    .site-top:after{content:"";position:absolute;bottom:-220px;left:-240px;width:550px;height:400px;border-radius:50%;background:radial-gradient(circle,#e0f0ff 0%,transparent 70%);pointer-events:none}
+    header{height:90px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:5}
+    .logo{text-decoration:none;display:inline-flex;align-items:center;gap:11px;font:800 24px 'Manrope',sans-serif;letter-spacing:-1.3px;color:var(--navy)}
+    .logo-mark{width:48px;height:48px;display:block;object-fit:cover;border-radius:0;box-shadow:none}
+    .logo-mark svg{width:22px;height:22px}
+    .logo .dot{color:#5c9cdf}
+    .logo-copy{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+    .logo-name{font:inherit;line-height:1}
+    .logo-tagline{font:600 10px/1.2 'DM Sans',sans-serif;letter-spacing:.32px;color:#486f98;white-space:nowrap;animation:taglineFadeIn .65s cubic-bezier(.22,.68,.33,1) .15s both}
+    @keyframes taglineFadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+    html[data-theme="dark"] .logo-tagline{color:#a6c9ee}
+    nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    nav>a:not(.btn){text-decoration:none;color:#4a6788;font-size:14px;font-weight:700;transition:transform .2s,background .2s,box-shadow .2s,color .2s;border:1px solid rgba(255,255,255,.92);background:rgba(255,255,255,.42);box-shadow:0 10px 24px rgba(88,138,196,.12),inset 0 1px 0 rgba(255,255,255,.96),0 0 0 1px rgba(123,170,219,.16);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:13px 22px;border-radius:18px}
+    nav>a:not(.btn):hover{color:#2b68b4;transform:translateY(-2px);background:rgba(255,255,255,.66);box-shadow:0 14px 30px rgba(88,138,196,.18),inset 0 1px 0 rgba(255,255,255,1),0 0 0 1px rgba(123,170,219,.24)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:14px 23px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:700;background:var(--blue);color:#fff;box-shadow:0 9px 19px #4c85c72c;border:1px solid #477fc6;transition:transform .2s,background .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);background:var(--blue-dark);box-shadow:0 12px 26px #4c85c74a}
+    .btn.glass-signin{min-width:158px;padding:15px 30px;border-radius:16px;background:rgba(255,255,255,.46);color:#397cce;border:1px solid rgba(255,255,255,.96);box-shadow:0 10px 25px rgba(98,153,211,.13),inset 0 1px 0 rgba(255,255,255,.95),0 0 0 1px rgba(118,170,223,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-size:15px;letter-spacing:.01em}
+    .btn.glass-signin:hover{background:rgba(255,255,255,.75);color:#266fc0;box-shadow:0 14px 32px rgba(83,146,209,.19),inset 0 1px 0 white,0 0 0 1px rgba(118,170,223,.30)}
+    .btn.secondary{color:#335d8c;background:#fff9;box-shadow:none;border:1px solid #c9ddf1}
+    .btn.secondary:hover{background:white}
+    .signin-dialog{border:1px solid #d5e8fa;border-radius:22px;padding:34px;width:min(420px,calc(100% - 32px));color:var(--ink);background:rgba(248,252,255,.96);box-shadow:0 30px 80px rgba(27,71,127,.18);backdrop-filter:blur(18px)}
+    .signin-dialog::backdrop{background:rgba(26,55,94,.27);backdrop-filter:blur(5px)}
+    .signin-dialog h2{font-size:25px;letter-spacing:-.8px;margin:0 0 8px}
+    .signin-dialog p{font-size:14px;color:#6d86a1;line-height:1.7;margin:0}
+    .dialog-top{display:flex;justify-content:space-between;align-items:start;gap:16px}
+    .dialog-close{background:#e9f4ff;border:1px solid #d3e6f8;border-radius:10px;width:32px;height:32px;cursor:pointer;color:var(--navy)}
+    .signin-dialog .info{background:#e9f4ff;border:1px solid #d8eafc;border-radius:13px;margin-top:23px;padding:15px;color:#557898;font-size:13px;line-height:1.65}
+    .menu{display:none;border:1px solid #bdd5ed;color:var(--navy);background:#ffffffd9;border-radius:11px;padding:9px 13px;cursor:pointer;font-size:20px}
+    .hero{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:58px;padding-top:76px;padding-bottom:118px;min-height:610px}
+    .eyebrow{font-size:11px;letter-spacing:2.1px;text-transform:uppercase;color:#4c86c5;font-weight:800;display:inline-flex;align-items:center;gap:9px}
+    .eyebrow:before{content:"";width:22px;height:2px;background:#81b9ef;border-radius:5px}.hero .eyebrow:before{display:none}.hero-eyebrow{font-size:13px;letter-spacing:2.3px}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:'Manrope',sans-serif}
+    h1{font-size:clamp(43px,5vw,69px);letter-spacing:-3.4px;line-height:1.13;color:var(--navy);margin:24px 0}
+    h1 em{font-style:normal;color:#5999da}
+    .lead{font-size:17px;line-height:1.85;color:#617b98;max-width:490px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+    .hero-note{margin-top:36px;display:flex;align-items:center;gap:11px;color:#7890a9;font-size:12px;font-weight:600}
+    .hero-note .stars{color:#5897d7;font-size:23px;line-height:1;letter-spacing:0;display:inline-block}
+    .art{min-height:430px;position:relative;display:grid;place-items:center;isolation:isolate}
+    .art-circle{position:absolute;z-index:-1;width:438px;height:438px;border-radius:50%;background:linear-gradient(140deg,#e3f2ff,#cee5ff 75%,#eaf6ff);border:1px solid #d1e5fa}
+    .art-circle:before{content:"";position:absolute;inset:34px;border-radius:50%;border:1px dashed #afd0f0}
+    .art-circle:after{content:"";position:absolute;inset:-19px;border-radius:50%;border:1px solid #d9eafa}
+    .mockup{width:365px;max-width:calc(100% - 32px);background:rgba(255,255,255,.95);border:1px solid #e2edf8;border-radius:22px;box-shadow:0 28px 70px #6596c735;transform:rotate(-4deg);padding:19px;position:relative;z-index:2}
+    .window-controls{display:flex;gap:6px;margin-bottom:20px}
+    .window-controls span{width:7px;height:7px;background:#d2e5f8;border-radius:50%}
+    .mock-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .mock-title strong{font:800 18px 'Manrope',sans-serif;color:#233d60;letter-spacing:-.4px}
+    .pill{font-size:10px;font-weight:800;color:#508bcb;background:#e9f5ff;padding:7px 10px;border-radius:30px}
+    .course{display:flex;align-items:center;gap:12px;padding:13px;margin:9px 0;background:#f4f9fe;border:1px solid #eaf2fa;border-radius:12px}
+    .course-icon{width:37px;height:37px;flex-shrink:0;border-radius:10px;display:grid;place-items:center;background:#dcedff;color:#407ac1}
+    .course:nth-of-type(2) .course-icon{background:#e9e4ff;color:#8074ce}
+    .course:nth-of-type(3) .course-icon{background:#dff5ee;color:#50a78a}
+    .course b{font-size:12px;display:block;color:#304563;margin-bottom:5px}
+    .course small{font-size:10px;color:#92a5b8}
+    .course .arrow{margin-left:auto;color:#789bba}
+    .floating{z-index:3;position:absolute;padding:13px 16px;border-radius:13px;background:#fff;box-shadow:0 15px 35px #6c9ac82f;border:1px solid #e4f0fb;font-size:12px;font-weight:700;color:#53708f;display:flex;gap:10px;align-items:center}
+    .floating span{width:29px;height:29px;display:grid;place-items:center;background:#e8f4ff;color:#4d8ace;border-radius:9px;font-size:17px}
+    .float-top{right:-14px;top:61px;transform:rotate(5deg)}
+    .float-bottom{left:-30px;bottom:42px;transform:rotate(4deg)}
+    .highlights{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #d5e7f8;padding:25px 0 30px;gap:18px}
+    .highlight{font-weight:700;color:#6684a3;font-size:13px;display:flex;gap:10px;align-items:center;justify-content:center}
+    .highlight svg{width:18px;height:18px;stroke:#7db0e1;flex-shrink:0}
+    .features{padding-top:110px;padding-bottom:107px;text-align:center}
+    h2{font-size:clamp(31px,3.3vw,44px);line-height:1.22;letter-spacing:-1.9px;color:#213b5b;margin:15px 0 17px}
+    .section-text{max-width:570px;color:#7a90a8;font-size:15px;line-height:1.85;margin:0 auto}
+    .features .eyebrow:before{display:none}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:45px;text-align:left}
+    .feature-card{position:relative;overflow:hidden;border-radius:20px;padding:35px 31px;min-height:265px;background:#fff;border:1px solid #e4eef8;box-shadow:0 15px 35px #8db2d11a;transition:transform .2s,box-shadow .2s}
+    .feature-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .feature-card:after{content:"";position:absolute;width:160px;height:160px;right:-95px;top:-90px;border-radius:50%;background:#edf7ff}
+    .feature-icon{display:grid;place-items:center;height:55px;width:55px;background:#e8f4ff;color:#568ecb;border-radius:16px}
+    .feature-icon svg{width:27px;height:27px}
+    .feature-card h3{font-size:19px;color:#2a4668;letter-spacing:-.6px;margin:29px 0 10px}
+    .feature-card p{font-size:14px;color:#7a8fa6;line-height:1.85;margin:0}
+    .callout-wrap{padding-bottom:100px}
+    .callout{background:linear-gradient(112deg,#dceeff,#edf7ff 80%);border:1px solid #d1e6f9;border-radius:26px;padding:57px 65px;display:flex;justify-content:space-between;align-items:center;gap:40px;position:relative;overflow:hidden}
+    .callout:after{content:"";width:240px;height:240px;border:1px solid #bad8f4;border-radius:50%;position:absolute;right:22%;top:-145px;pointer-events:none}
+    .callout h2{font-size:clamp(29px,3vw,39px);margin:13px 0 10px}
+    .callout p{font-size:15px;color:#6c88a4;margin:0;line-height:1.7}
+    .callout .btn{flex-shrink:0;position:relative;z-index:1}
+    .about-intro{max-width:490px;position:relative;z-index:1}
+    .about-motto{margin-top:17px!important}
+    .about-motto strong{color:#397cce}
+    .about-contact{display:grid;gap:10px;min-width:min(100%,330px);position:relative;z-index:1}
+    .about-contact a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 15px;text-decoration:none;background:rgba(255,255,255,.68);border:1px solid #d3e6f8;border-radius:13px;transition:transform .2s,background .2s,border-color .2s}
+    .about-contact a:hover{transform:translateY(-2px);background:#fff;border-color:#a9cbed}
+    .about-contact span{font-size:12px;font-weight:700;color:#6c88a4}
+    .about-contact strong{font-size:13px;color:#30567f;text-align:right;overflow-wrap:anywhere}
+    footer{border-top:1px solid #e2edf6;padding:31px 0 38px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#8197af;font-size:13px}
+    footer strong{color:#49698b}
+    :focus-visible{outline:3px solid #77abe0;outline-offset:3px}
+    @media(max-width:1020px){.hero{gap:25px}.art-circle{width:350px;height:350px}.mockup{width:315px}.float-top{right:-5px}.float-bottom{left:-6px}}
+    @media(max-width:760px){.container{padding-left:22px;padding-right:22px}header{height:76px}.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:68px;background:#ffffffed;border:1px solid #d9e9f7;box-shadow:var(--shadow);border-radius:17px;padding:20px;flex-direction:column;gap:16px;align-items:stretch}nav.open{display:flex}nav a:not(.btn){text-align:center}.hero{grid-template-columns:1fr;padding-top:55px;padding-bottom:65px;min-height:0;gap:45px}h1{letter-spacing:-2.5px}.art{min-height:385px}.art-circle{width:340px;height:340px}.float-top{right:0}.float-bottom{left:0}.highlights{grid-template-columns:repeat(2,1fr);gap:20px 12px}.highlight{justify-content:start;font-size:12px}.features{padding-top:75px;padding-bottom:75px}.feature-grid{grid-template-columns:1fr;gap:14px;margin-top:30px}.feature-card{min-height:0;padding:27px}.feature-card h3{margin-top:23px}.callout-wrap{padding-bottom:70px}.callout{padding:35px 28px;display:block}.about-contact{margin-top:25px}.callout .btn{margin-top:27px}}
+    @media(max-width:410px){.art{min-height:330px}.art-circle{width:270px;height:270px}.mockup{width:265px;padding:15px}.floating{font-size:10px;padding:8px 10px}.float-top{top:26px}.float-bottom{bottom:15px}.hero-actions .btn{padding:13px 16px;font-size:13px}.logo{font-size:22px}.logo-mark{width:40px;height:40px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+  <link rel="stylesheet" href="assets/theme.css" />
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("lectura-theme")==="dark"?"dark":"light"}catch{document.documentElement.dataset.theme="light"}</script>
+</head>
+<body>
+  <div class="site-top">
+    <div class="container">
+      <header>
+        <a class="logo" href="#home" aria-label="GRADS4GRADS home"><img class="logo-mark" src="assets/lectura-logo-rounded.png" alt="" /><span class="logo-copy"><span class="logo-name">GRADS4GRADS</span><span class="logo-tagline">Learn. Practice. Excel.</span></span></a>
+        <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
+        <nav id="nav" aria-label="Main navigation">
+          <a href="#about">About</a><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><span aria-hidden="true">☾</span><span>Dark mode</span></button>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" id="home">
+          <div>
+            <div class="eyebrow hero-eyebrow">A brighter way to learn</div>
+            <h1>Learning feels<br /><em>better here.</em></h1>
+            <p class="lead">All your subjects, resources, and practice material in one calm, organized space. Less searching, more time for what matters.</p>
+            <div class="hero-actions"><a class="btn glass-signin" href="subjects.html">DIVE INSIDE →</a></div>
+            <div class="hero-note"><span class="stars" aria-hidden="true">✳</span> Thoughtfully designed for everyday learning</div>
+          </div>
+          <div class="art" aria-label="Illustration of a simple academic subject dashboard" role="img">
+            <div class="art-circle"></div>
+            <div class="mockup">
+              <div class="window-controls"><span></span><span></span><span></span></div>
+              <div class="mock-title"><strong>My learning space</strong><span class="pill">Your subjects</span></div>
+              <div class="course"><div class="course-icon">⌘</div><div><b>Critical thinking</b><small>Notes &amp; learning materials</small></div><span class="arrow">↗</span></div>
+              <div class="course"><div class="course-icon">∑</div><div><b>Engineering math</b><small>Concepts &amp; practice</small></div><span class="arrow">↗</span></div>
+              <div class="course"><div class="course-icon">✧</div><div><b>Study resources</b><small>Easy to find, easy to learn</small></div><span class="arrow">↗</span></div>
+            </div>
+            <div class="floating float-top"><span>✦</span> Learn at your pace</div>
+            <div class="floating float-bottom"><span>✓</span> Everything in one place</div>
+          </div>
+        </section>
+        <div class="highlights" aria-label="Platform values">
+          <div class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor"><path d="m5 12 5 5L20 7"/></svg> Simple by design</div>
+          <div class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg> Organized learning</div>
+          <div class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor"><path d="M3 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM17 11a4 4 0 0 1 4 4v5"/></svg> Students &amp; faculty</div>
+          <div class="highlight"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor"><path d="m4 15 6-6 4 4 6-7"/><path d="M15 6h5v5"/></svg> Learn with confidence</div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="container">
+    <section class="features" id="explore">
+      <div class="eyebrow">Everything you need</div><h2>Made to make learning easier.</h2>
+      <p class="section-text">One calm place to read published notes, practice MCQs, and finish with a Grand Quiz—no student account needed.</p>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l2.2 1.2 2.5.3 1 2.3 1.9 1.7-.5 2.5.5 2.5-1.9 1.7-1 2.3-2.5.3L12 21l-2.2-1.2-2.5-.3-1-2.3-1.9-1.7.5-2.5-.5-2.5 1.9-1.7 1-2.3 2.5-.3z"/></svg></div><h3>Quizzes</h3><p>Check your understanding with subject MCQs and challenge yourself with a Grand Quiz.</p></article>
+        <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><h3>Study resources</h3><p>Keep notes, PDFs, references, and materials shared by your faculty easy to access.</p></article>
+        <article class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h10M8 12h10M8 17h6"/><path d="m3 7 1 1 2-2m-3 6 1 1 2-2m-3 6 1 1 2-2"/></svg></div><h3>Practice &amp; Q&amp;A</h3><p>Refresh important concepts and strengthen your understanding with practice questions.</p></article>
+      </div>
+    </section>
+    <section class="callout-wrap" id="about">
+      <div class="callout about-callout">
+        <div class="about-intro"><div class="eyebrow">About the creator</div><h2>SAHIL SAKALABHAKTHULA</h2><p class="about-motto"><strong>Learn. Practice. Excel.</strong> Keep learning, put what you learn into practice, and grow with every step.</p></div>
+        <div class="about-contact" aria-label="Contact and portfolio">
+          <a href="mailto:sahil81255@gmail.com"><span>Email</span><strong>sahil81255@gmail.com</strong></a>
+          <a href="tel:8125584420"><span>Phone</span><strong>8125584420</strong></a>
+          <a href="https://sahil-portfolio-prompt-smiths.vercel.app" target="_blank" rel="noopener noreferrer"><span>Portfolio</span><strong>Visit my portfolio ↗</strong></a>
+        </div>
+      </div>
+    </section>
+    <footer><span>© 2026 <strong>GRADS4GRADS</strong> </span><span>Curated study materials, updated regularly</span></footer>
+  </div>
+  <script>
+    const button=document.getElementById('menu');
+    const nav=document.getElementById('nav');
+    button.addEventListener('click',()=>{const expanded=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(expanded));button.textContent=expanded?'✕':'☰';});
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false');button.textContent='☰';}));
+  </script>
+<script src="assets/theme.js"></script>
+</body>
+</html>

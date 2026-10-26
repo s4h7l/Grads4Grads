@@ -1,0 +1,48 @@
+[
+  {
+    "code": "PEA 101",
+    "name": "Problem Solving and Critical Thinking",
+    "short": "Reason, break problems down, and decide with confidence.",
+    "icon": "✳",
+    "semester": 1,
+    "notes_summary": "This unit presents problem solving as a clear sequence: describe the real problem without jumping to a solution, identify requirements and measurable outcomes, then account for constraints, assumptions, and boundary cases. It shows how to break a larger task into ordered parts, focus on information relevant to the goal, and represent a solution with inputs, processing, outputs, tables, algorithms, or flowcharts. The canteen, student marks, attendance, and library examples show how to move from a problem statement to a plan that can be checked with test cases."
+  },
+  {
+    "code": "PEA 102",
+    "name": "Engineering Mathematics for Product Engineers",
+    "short": "Mathematical foundations for solving engineering problems.",
+    "icon": "∑",
+    "semester": 1
+  },
+  {
+    "code": "PEA 103",
+    "name": "AI Interaction Design",
+    "short": "Design thoughtful interactions with intelligent systems.",
+    "icon": "◈",
+    "semester": 1
+  },
+  {
+    "code": "PEA 104",
+    "name": "Problem Solving and Object-Oriented Programming Fundamentals",
+    "short": "Explore programming logic and core object-oriented ideas.",
+    "icon": "⌘",
+    "semester": 1,
+    "notes_summary": "These notes explain object-oriented programming in C++ through classes and objects, then show how encapsulation protects an object’s state with access modifiers and public methods. They cover constructors and destructors, friend functions and operator overloading, and the difference between compile-time overloading and runtime polymorphism with virtual functions. The inheritance sections describe class hierarchies, visibility rules, and the order in which base and derived constructors and destructors run. Code examples and comparison tables connect each idea to practical class design."
+  },
+  {
+    "code": "PEA 105",
+    "name": "Data Structures and Algorithmic Problem Solving",
+    "short": "Learn structures, algorithms, and effective solutions.",
+    "icon": "◇",
+    "semester": 1,
+    "notes_summary": "The notes compare stack and heap memory, explain dynamic allocation with new and delete, and build pointer skills from addresses and dereferencing through pointer-to-pointer relationships. They highlight object lifetimes, memory leaks, and how reassignment or missing cleanup can lose access to allocated memory. The problem-solving sections apply loops and indexing to matrices, including the 3×3 hourglass sum and its valid bounds, then introduce linear and binary search, matrix search, and matrix transformations such as transpose. Worked examples emphasize tracing indices and checking edge cases."
+  },
+  {
+    "code": "PEA 106",
+    "name": "Introduction to Global Coding Competitions",
+    "short": "Discover competitive programming concepts and contests.",
+    "icon": "↗",
+    "semester": 1,
+    "notes_summary": "This guide moves from programming fundamentals and computer architecture into number systems, C++ syntax, tokens, variables, data types, and operators. It then develops control flow with if/else, switch, while and for loops, nested loops and patterns, followed by functions, recursion, storage classes, and user-defined types such as struct, union, and enum. Examples include number conversions, formatting output, and finding a GCD with the Euclidean algorithm. The closing review stresses compiling, debugging, validating boundary cases, and avoiding common mistakes such as confusing assignment with equality."
+  }
+]

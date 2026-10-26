@@ -1,0 +1,152 @@
+{
+  "PEA 104": [
+    {
+      "question": "What is a class in C++?",
+      "answer": "A blueprint defining data members and member functions. A class defines a reusable blueprint; objects are instances."
+    },
+    {
+      "question": "What is an object?",
+      "answer": "A concrete instance of a class. Objects are created from class definitions and hold instance state."
+    },
+    {
+      "question": "Which access specifier restricts access to class members?",
+      "answer": "private. Private members are inaccessible directly from outside the class."
+    },
+    {
+      "question": "What is encapsulation?",
+      "answer": "Bundling data and methods with controlled access. Encapsulation groups state and behavior while restricting direct access."
+    },
+    {
+      "question": "What is the default access level of members in a C++ class?",
+      "answer": "private. The notes contrast class default private access with struct default public access."
+    },
+    {
+      "question": "Which function is used to read private data through a public interface?",
+      "answer": "A getter. Getters/accessors expose values without direct external access to private fields."
+    },
+    {
+      "question": "Which special function is invoked when an object is initialized?",
+      "answer": "Constructor. Constructors initialize objects at creation."
+    },
+    {
+      "question": "Which special function is associated with object cleanup?",
+      "answer": "Destructor. Destructors run at the end of an object's lifetime to release resources."
+    },
+    {
+      "question": "Which mechanism allows a derived class to reuse a base class?",
+      "answer": "Inheritance. Inheritance establishes base and derived class relationships."
+    },
+    {
+      "question": "Which keyword supports runtime polymorphism for a member function?",
+      "answer": "virtual. Virtual functions enable dynamic dispatch when called through base-class interfaces."
+    },
+    {
+      "question": "What does function overloading mean?",
+      "answer": "Multiple functions share a name with different parameter lists. Overloading is a compile-time polymorphism mechanism."
+    },
+    {
+      "question": "Which declaration indicates a pure virtual function?",
+      "answer": "virtual void show() = 0;. The '= 0' pure virtual specifier makes the function abstract."
+    }
+  ],
+  "PEA 105": [
+    {
+      "question": "What typically manages local automatic variables?",
+      "answer": "Stack memory. Local automatic variables generally have scope-bound storage."
+    },
+    {
+      "question": "What does the new operator request in C++?",
+      "answer": "Dynamic allocation. new allocates dynamic storage and returns an address."
+    },
+    {
+      "question": "Which operator releases memory allocated with scalar new?",
+      "answer": "delete. delete releases storage acquired with scalar new."
+    },
+    {
+      "question": "What does a pointer store?",
+      "answer": "A memory address. Pointers store addresses and can be dereferenced."
+    },
+    {
+      "question": "What does *p mean when p points to an int?",
+      "answer": "The value stored at the pointed-to address. Dereferencing accesses the pointee's value."
+    },
+    {
+      "question": "What does &x evaluate to?",
+      "answer": "The address of x. The address-of operator yields the location of x."
+    },
+    {
+      "question": "What does a double pointer store?",
+      "answer": "The address of another pointer. A pointer-to-pointer stores another pointer variable's address."
+    },
+    {
+      "question": "What does **q access when q points to p and p points to x?",
+      "answer": "The value of x. Two dereferences follow q to p and then to x."
+    },
+    {
+      "question": "How many values are in a standard 3\u00d73 hourglass pattern?",
+      "answer": "7. The hourglass uses three top, one middle, and three bottom elements."
+    },
+    {
+      "question": "How many 3\u00d73 hourglasses fit in a 6\u00d76 matrix?",
+      "answer": "16. There are four horizontal and four vertical starting positions."
+    },
+    {
+      "question": "Why initialize a maximum hourglass sum to INT_MIN?",
+      "answer": "To handle arrays with negative values. INT_MIN allows negative sums to replace the initial value."
+    },
+    {
+      "question": "What is a memory leak?",
+      "answer": "Allocated heap memory becomes unreachable without being released. The notes describe orphaned heap allocations that are never freed."
+    }
+  ],
+  "PEA 106": [
+    {
+      "question": "What does IPO stand for in computer fundamentals?",
+      "answer": "Input, Process, Output. The notes introduce the input-process-output cycle."
+    },
+    {
+      "question": "Which number system uses base 2?",
+      "answer": "Binary. Binary uses two digits and base 2."
+    },
+    {
+      "question": "Which number system uses base 16?",
+      "answer": "Hexadecimal. Hexadecimal uses base 16."
+    },
+    {
+      "question": "Which operator checks equality in C++?",
+      "answer": "==. The notes distinguish assignment (=) from equality comparison (==)."
+    },
+    {
+      "question": "Which construct is used for repeated execution while a condition is true?",
+      "answer": "while loop. The while loop is an iterative control structure."
+    },
+    {
+      "question": "Which statement selects among cases based on an expression?",
+      "answer": "switch. The switch statement supports multi-branch selection."
+    },
+    {
+      "question": "Which loop is commonly written with initialization, condition, and update?",
+      "answer": "for loop. The for-loop syntax groups these three components."
+    },
+    {
+      "question": "Which statement returns a value from a function?",
+      "answer": "return. Functions can send a value back to the caller with return."
+    },
+    {
+      "question": "Which header provides setprecision formatting?",
+      "answer": "<iomanip>. The notes associate setprecision with the iomanip header."
+    },
+    {
+      "question": "What does a base case do in recursion?",
+      "answer": "Stops further recursive calls. The notes describe the base case as the terminating anchor."
+    },
+    {
+      "question": "Which storage duration lets a local variable retain its value across calls?",
+      "answer": "static. A static local variable is initialized once and persists across calls."
+    },
+    {
+      "question": "Which algorithm is highlighted for finding the GCD?",
+      "answer": "Euclidean algorithm. The notes list Euclidean GCD in the functions module."
+    }
+  ]
+}

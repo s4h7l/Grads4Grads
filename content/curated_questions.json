@@ -1,0 +1,545 @@
+{
+  "PEA 104": [
+    {
+      "id": "editor-PEA104-0",
+      "prompt": "What is a class in C++?",
+      "options": [
+        "A blueprint defining data members and member functions",
+        "A specific object already allocated in memory",
+        "A function call stack",
+        "A pointer to dynamic memory"
+      ],
+      "correct": 0,
+      "explanation": "A class defines a reusable blueprint; objects are instances.",
+      "source": "OOPS NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-1",
+      "prompt": "What is an object?",
+      "options": [
+        "A concrete instance of a class",
+        "A C++ header file",
+        "A namespace alias",
+        "An access specifier"
+      ],
+      "correct": 0,
+      "explanation": "Objects are created from class definitions and hold instance state.",
+      "source": "OOPS NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-2",
+      "prompt": "Which access specifier restricts access to class members?",
+      "options": [
+        "private",
+        "public",
+        "friend",
+        "virtual"
+      ],
+      "correct": 0,
+      "explanation": "Private members are inaccessible directly from outside the class.",
+      "source": "OOPS NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-3",
+      "prompt": "What is encapsulation?",
+      "options": [
+        "Bundling data and methods with controlled access",
+        "Making all data global",
+        "Using only procedural functions",
+        "Allocating every object on the heap"
+      ],
+      "correct": 0,
+      "explanation": "Encapsulation groups state and behavior while restricting direct access.",
+      "source": "OOPS NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-4",
+      "prompt": "What is the default access level of members in a C++ class?",
+      "options": [
+        "private",
+        "public",
+        "protected",
+        "static"
+      ],
+      "correct": 0,
+      "explanation": "The notes contrast class default private access with struct default public access.",
+      "source": "OOPS NOTES",
+      "source_page": 10,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-5",
+      "prompt": "Which function is used to read private data through a public interface?",
+      "options": [
+        "A getter",
+        "A destructor",
+        "An overloaded operator only",
+        "A friend declaration only"
+      ],
+      "correct": 0,
+      "explanation": "Getters/accessors expose values without direct external access to private fields.",
+      "source": "OOPS NOTES",
+      "source_page": 10,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-6",
+      "prompt": "Which special function is invoked when an object is initialized?",
+      "options": [
+        "Constructor",
+        "Destructor",
+        "Namespace",
+        "Preprocessor"
+      ],
+      "correct": 0,
+      "explanation": "Constructors initialize objects at creation.",
+      "source": "OOPS NOTES",
+      "source_page": 16,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-7",
+      "prompt": "Which special function is associated with object cleanup?",
+      "options": [
+        "Destructor",
+        "Constructor",
+        "Getter",
+        "Type alias"
+      ],
+      "correct": 0,
+      "explanation": "Destructors run at the end of an object's lifetime to release resources.",
+      "source": "OOPS NOTES",
+      "source_page": 26,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-8",
+      "prompt": "Which mechanism allows a derived class to reuse a base class?",
+      "options": [
+        "Inheritance",
+        "Encapsulation only",
+        "Recursion",
+        "Template specialization only"
+      ],
+      "correct": 0,
+      "explanation": "Inheritance establishes base and derived class relationships.",
+      "source": "OOPS NOTES",
+      "source_page": 10,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-9",
+      "prompt": "Which keyword supports runtime polymorphism for a member function?",
+      "options": [
+        "virtual",
+        "static",
+        "typedef",
+        "mutable"
+      ],
+      "correct": 0,
+      "explanation": "Virtual functions enable dynamic dispatch when called through base-class interfaces.",
+      "source": "OOPS NOTES",
+      "source_page": 40,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-10",
+      "prompt": "What does function overloading mean?",
+      "options": [
+        "Multiple functions share a name with different parameter lists",
+        "One function is called recursively",
+        "One object is copied bitwise",
+        "A function has no return type"
+      ],
+      "correct": 0,
+      "explanation": "Overloading is a compile-time polymorphism mechanism.",
+      "source": "OOPS NOTES",
+      "source_page": 40,
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    },
+    {
+      "id": "editor-PEA104-11",
+      "prompt": "Which declaration indicates a pure virtual function?",
+      "options": [
+        "virtual void show() = 0;",
+        "void show() const;",
+        "static void show();",
+        "friend void show();"
+      ],
+      "correct": 0,
+      "explanation": "The '= 0' pure virtual specifier makes the function abstract.",
+      "source": "OOPS NOTES",
+      "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+    }
+  ],
+  "PEA 105": [
+    {
+      "id": "editor-PEA105-0",
+      "prompt": "What typically manages local automatic variables?",
+      "options": [
+        "Stack memory",
+        "Heap allocations only",
+        "Executable code segment",
+        "Read-only text section"
+      ],
+      "correct": 0,
+      "explanation": "Local automatic variables generally have scope-bound storage.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 13,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-1",
+      "prompt": "What does the new operator request in C++?",
+      "options": [
+        "Dynamic allocation",
+        "Automatic scope cleanup",
+        "Compilation of a class",
+        "Function overloading"
+      ],
+      "correct": 0,
+      "explanation": "new allocates dynamic storage and returns an address.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 15,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-2",
+      "prompt": "Which operator releases memory allocated with scalar new?",
+      "options": [
+        "delete",
+        "free on a new-allocated pointer",
+        "return",
+        "sizeof"
+      ],
+      "correct": 0,
+      "explanation": "delete releases storage acquired with scalar new.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 16,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-3",
+      "prompt": "What does a pointer store?",
+      "options": [
+        "A memory address",
+        "Only an integer's arithmetic value",
+        "The name of a variable",
+        "A C++ keyword"
+      ],
+      "correct": 0,
+      "explanation": "Pointers store addresses and can be dereferenced.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-4",
+      "prompt": "What does *p mean when p points to an int?",
+      "options": [
+        "The value stored at the pointed-to address",
+        "The address of p",
+        "The size of p",
+        "A new allocation"
+      ],
+      "correct": 0,
+      "explanation": "Dereferencing accesses the pointee's value.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-5",
+      "prompt": "What does &x evaluate to?",
+      "options": [
+        "The address of x",
+        "The value of x squared",
+        "A reference to a function only",
+        "The heap size"
+      ],
+      "correct": 0,
+      "explanation": "The address-of operator yields the location of x.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-6",
+      "prompt": "What does a double pointer store?",
+      "options": [
+        "The address of another pointer",
+        "Two integer values",
+        "A pair of arrays",
+        "The sum of two addresses"
+      ],
+      "correct": 0,
+      "explanation": "A pointer-to-pointer stores another pointer variable's address.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-7",
+      "prompt": "What does **q access when q points to p and p points to x?",
+      "options": [
+        "The value of x",
+        "Only the address of q",
+        "The byte size of p",
+        "The name of x"
+      ],
+      "correct": 0,
+      "explanation": "Two dereferences follow q to p and then to x.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-8",
+      "prompt": "How many values are in a standard 3\u00d73 hourglass pattern?",
+      "options": [
+        "7",
+        "5",
+        "8",
+        "9"
+      ],
+      "correct": 0,
+      "explanation": "The hourglass uses three top, one middle, and three bottom elements.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 7,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-9",
+      "prompt": "How many 3\u00d73 hourglasses fit in a 6\u00d76 matrix?",
+      "options": [
+        "16",
+        "9",
+        "12",
+        "36"
+      ],
+      "correct": 0,
+      "explanation": "There are four horizontal and four vertical starting positions.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-10",
+      "prompt": "Why initialize a maximum hourglass sum to INT_MIN?",
+      "options": [
+        "To handle arrays with negative values",
+        "To prevent every loop",
+        "To force the result to zero",
+        "To allocate heap memory"
+      ],
+      "correct": 0,
+      "explanation": "INT_MIN allows negative sums to replace the initial value.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 9,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    },
+    {
+      "id": "editor-PEA105-11",
+      "prompt": "What is a memory leak?",
+      "options": [
+        "Allocated heap memory becomes unreachable without being released",
+        "A variable going out of scope normally",
+        "A successful delete call",
+        "A compiler syntax error"
+      ],
+      "correct": 0,
+      "explanation": "The notes describe orphaned heap allocations that are never freed.",
+      "source": "Memory Organization - Stack vs Heap Lecture Notes",
+      "source_page": 15,
+      "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+    }
+  ],
+  "PEA 106": [
+    {
+      "id": "editor-PEA106-0",
+      "prompt": "What does IPO stand for in computer fundamentals?",
+      "options": [
+        "Input, Process, Output",
+        "Initialize, Print, Open",
+        "Integer, Pointer, Object",
+        "Input, Pointer, Operator"
+      ],
+      "correct": 0,
+      "explanation": "The notes introduce the input-process-output cycle.",
+      "source": "C++ COMPLETE NOTES",
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-1",
+      "prompt": "Which number system uses base 2?",
+      "options": [
+        "Binary",
+        "Decimal",
+        "Octal",
+        "Hexadecimal"
+      ],
+      "correct": 0,
+      "explanation": "Binary uses two digits and base 2.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 36,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-2",
+      "prompt": "Which number system uses base 16?",
+      "options": [
+        "Hexadecimal",
+        "Binary",
+        "Octal",
+        "Decimal"
+      ],
+      "correct": 0,
+      "explanation": "Hexadecimal uses base 16.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 44,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-3",
+      "prompt": "Which operator checks equality in C++?",
+      "options": [
+        "==",
+        "=",
+        "+=",
+        "!="
+      ],
+      "correct": 0,
+      "explanation": "The notes distinguish assignment (=) from equality comparison (==).",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 13,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-4",
+      "prompt": "Which construct is used for repeated execution while a condition is true?",
+      "options": [
+        "while loop",
+        "struct declaration",
+        "return statement",
+        "namespace declaration"
+      ],
+      "correct": 0,
+      "explanation": "The while loop is an iterative control structure.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 78,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-5",
+      "prompt": "Which statement selects among cases based on an expression?",
+      "options": [
+        "switch",
+        "continue",
+        "typedef",
+        "include"
+      ],
+      "correct": 0,
+      "explanation": "The switch statement supports multi-branch selection.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 56,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-6",
+      "prompt": "Which loop is commonly written with initialization, condition, and update?",
+      "options": [
+        "for loop",
+        "do declaration",
+        "class",
+        "return"
+      ],
+      "correct": 0,
+      "explanation": "The for-loop syntax groups these three components.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 27,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-7",
+      "prompt": "Which statement returns a value from a function?",
+      "options": [
+        "return",
+        "include",
+        "namespace",
+        "break only"
+      ],
+      "correct": 0,
+      "explanation": "Functions can send a value back to the caller with return.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-8",
+      "prompt": "Which header provides setprecision formatting?",
+      "options": [
+        "<iomanip>",
+        "<vector>",
+        "<cmath>",
+        "<string>"
+      ],
+      "correct": 0,
+      "explanation": "The notes associate setprecision with the iomanip header.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 100,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-9",
+      "prompt": "What does a base case do in recursion?",
+      "options": [
+        "Stops further recursive calls",
+        "Starts an infinite loop",
+        "Allocates every object on heap",
+        "Declares a global variable"
+      ],
+      "correct": 0,
+      "explanation": "The notes describe the base case as the terminating anchor.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 7,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-10",
+      "prompt": "Which storage duration lets a local variable retain its value across calls?",
+      "options": [
+        "static",
+        "auto",
+        "register",
+        "temporary"
+      ],
+      "correct": 0,
+      "explanation": "A static local variable is initialized once and persists across calls.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 6,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    },
+    {
+      "id": "editor-PEA106-11",
+      "prompt": "Which algorithm is highlighted for finding the GCD?",
+      "options": [
+        "Euclidean algorithm",
+        "Bubble sort",
+        "Dijkstra's algorithm",
+        "Binary search"
+      ],
+      "correct": 0,
+      "explanation": "The notes list Euclidean GCD in the functions module.",
+      "source": "C++ COMPLETE NOTES",
+      "source_page": 97,
+      "source_pdf": "resources/pea106-e635ad044039.pdf"
+    }
+  ]
+}

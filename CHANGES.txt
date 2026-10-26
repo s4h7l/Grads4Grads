@@ -1,0 +1,20 @@
+LECTURA Quiz Review Repair — 23 October 2026
+
+Grand Quiz
+- Students must select and submit each answer to unlock Next.
+- Correct answers, answer highlights, explanations, and source-PDF page links are hidden while the test is in progress.
+- Results, all explanations, corrections, and source pages appear only in the final review.
+
+Source PDF Review
+- Every review question has a page-specific View original PDF button.
+- The button opens the same-site PDF reader at #page=N.
+- The PDF reader toolbar includes direct Open PDF, Download PDF, and the original Google Drive link (for PEA 101 Unit 1).
+- The original 32-page PDF is bundled unmodified.
+
+Verified
+- The source PDF serves with the application/pdf type and valid PDF signature from a local HTTP server.
+- 10-question end-to-end DOM/JavaScript interaction test in Chromium (embedded page) passed.
+- Separate JavaScript test verified saved quiz history and review deep links.
+- Navigation-based localhost/browser test could not run in this sandbox due a browser administrator policy.
+
+NOTE: Results are stored in each student's browser localStorage, not in a central server. The static site is not a proctored exam and cannot prevent students from separately accessing publicly available notes. Host the /site folder on an ordinary static web host for reliable PDFs.

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "welcome-sem1",
+    "title": "Semester 1 is open",
+    "message": "Explore the six PEA Semester 1 subjects. More faculty resources will be added as they are received.",
+    "date": "2026-10-23",
+    "subject": null
+  },
+  {
+    "id": "n-d1d9abbacfb9",
+    "title": "New PEA 101 resource",
+    "message": "PSCT Unit 1 — Problem Understanding and Representation is now available to study.",
+    "date": "2026-10-23",
+    "subject": "PEA 101"
+  },
+  {
+    "id": "n-cbc8b8ab3eb1",
+    "title": "New PEA 104 resource",
+    "message": "OOPS NOTES is now available to study.",
+    "date": "2026-10-23",
+    "subject": "PEA 104"
+  },
+  {
+    "id": "n-abb119236ac3",
+    "title": "New PEA 105 resource",
+    "message": "Memory Organization - Stack vs Heap Lecture Notes is now available to study.",
+    "date": "2026-10-23",
+    "subject": "PEA 105"
+  },
+  {
+    "id": "n-58bad7cc7db2",
+    "title": "New PEA 106 resource",
+    "message": "C++ COMPLETE NOTES is now available to study.",
+    "date": "2026-10-23",
+    "subject": "PEA 106"
+  }
+]

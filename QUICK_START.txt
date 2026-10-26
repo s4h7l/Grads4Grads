@@ -1,0 +1,10 @@
+GRADS4GRADS — QUICK START
+
+1) Windows: double-click PREVIEW_WINDOWS.bat.
+2) macOS/Linux: run: sh START_LECTURA_MAC_LINUX.sh
+3) Open http://127.0.0.1:8000/ if it does not open automatically.
+4) Choose Explore > Semester 1 > a subject. Try Resources, Q&A, Practice MCQs, or Grand Quiz.
+5) To publish approved content, install requirements.txt, use the commands in README.md, then run: python publish.py publish
+6) Refresh the local site. A change becomes public only after the site/ folder is deployed to Vercel.
+
+Semester 1 shows six subjects. Notes, Q&A, and quizzes are available where source content has been published. Student and faculty sign-in are not required. Quiz results and announcement read state stay in the current browser.

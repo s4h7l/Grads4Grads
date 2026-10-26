@@ -1,0 +1,18 @@
+GRADS4GRADS — PREVIEW HELP
+
+Use the complete project folder. The site relies on the files and relative paths under site/assets/, site/data/, site/pages/, and site/resources/.
+
+Windows:
+1. Double-click PREVIEW_WINDOWS.bat.
+2. Open http://127.0.0.1:8000/ if needed.
+3. Select Explore, Semester 1, and a subject.
+
+macOS/Linux:
+1. Run: sh START_LECTURA_MAC_LINUX.sh
+2. Open http://127.0.0.1:8000/.
+
+The HTML files are part of a static website. Opening a page by itself can prevent its scripts, content, PDFs, or page images from loading correctly. Keep the project's folder structure intact.
+
+Quiz results and announcement read state are stored in the browser used for the preview. They do not sync across browsers or devices.
+
+The launcher filename START_LECTURA_WINDOWS.bat remains unchanged for compatibility. The site and visible instructions use the Grads4Grads name.

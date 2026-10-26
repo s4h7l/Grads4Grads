@@ -1,0 +1,32 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files and local test output
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+playwright-report/
+test-results/
+
+# Vercel local state
+.vercel/

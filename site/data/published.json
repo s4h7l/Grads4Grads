@@ -1,0 +1,1428 @@
+{
+  "generated_at": "2026-10-23T06:48:37.971841+00:00",
+  "subjects": [
+    {
+      "code": "PEA 101",
+      "name": "Problem Solving and Critical Thinking",
+      "short": "Reason, break problems down, and decide with confidence.",
+      "icon": "✳",
+      "semester": 1,
+      "resources": [
+        {
+          "type": "pdf",
+          "path": "resources/pea101-ed86483e471a.pdf",
+          "title": "PSCT Unit 1 — Problem Understanding and Representation",
+          "added": "2026-10-23",
+          "sample": false,
+          "original_url": "https://drive.google.com/file/d/1i-CwDgN-nKbsdSbBhbKplqh0dKykD4xt/view?usp=sharing"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is a problem?",
+          "answer": "A problem is a situation in which we want to achieve a goal, but the method to achieve that goal is not immediately clear. Example: A student wants to improve examination marks but does not know how to plan their study.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 1
+        },
+        {
+          "question": "What is problem identification and problem framing?",
+          "answer": "• Problem identification means recognizing what is wrong, missing, or needs improvement. • Problem framing means expressing the problem clearly and focusing on what needs to be solved. Example: Poor framing: \"The canteen needs more counters.\" Better framing: \"Students experience long waiting times in the canteen during lunch hours.\" The better statement identifies the problem without assuming a solution.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 2
+        },
+        {
+          "question": "What are requirements?",
+          "answer": "Requirements describe what a solution must do, provide, or satisfy. Example: An online library system should allow students to search for books and check their availability.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 3
+        },
+        {
+          "question": "Differentiate between functional and non-functional requirements.",
+          "answer": "Functional requirements Non-functional requirements Describe what a system does Describe how well a system works Search for books Return results quickly Calculate attendance Calculate it accurately Generate examination results Protect student information",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 4
+        },
+        {
+          "question": "What are expected outcomes and success criteria?",
+          "answer": "• Expected outcomes are the results we want to achieve. • Success criteria are the conditions used to verify whether those results have been achieved. Example: The expected outcome is to reduce canteen waiting time from 12 minutes to 6 minutes. The success criterion is that the measured average waiting time reaches the target.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 5
+        },
+        {
+          "question": "Explain the Input–Process–Output (IPO) model with an example.",
+          "answer": "The IPO model represents a problem through three components: • Input: Data provided to the system. • Process: Operations performed on the data. • Output: Result produced by the system. Example: Calculate the average of three marks. • Input: 70, 80, 90 • Process: Add the marks and divide by 3. • Output: 80",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 6
+        },
+        {
+          "question": "What is a constraint? Give three examples.",
+          "answer": "A constraint is a limitation or restriction that a solution must satisfy. Examples: 1. Time: Complete the project in two weeks. 2. Budget: Develop an application within ₹10,000. 3. Memory: A program must operate within a specified memory limit.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 7
+        },
+        {
+          "question": "What is an assumption? Give an example.",
+          "answer": "An assumption is something accepted as true for solving a problem, even though it has not been fully verified. Example: While calculating attendance percentage, we assume that all classes have equal weight.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 8
+        },
+        {
+          "question": "Differentiate between constraints and assumptions.",
+          "answer": "Constraints Assumptions Limit what a solution can do State what we temporarily accept as true Must be respected or addressed Should be verified when possible Example: Limited budget Example: Internet access is available",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 9
+        },
+        {
+          "question": "What is a boundary condition? Why is it important?",
+          "answer": "A boundary condition describes a special case at the edge of the allowed input or operating range. It is important because a solution that works for normal inputs may fail at the limits. Example: If a person is eligible to vote at age 18 or above, age 18 is an important boundary case. For an array, an empty array and a single-element array are also important boundary cases.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 10
+        },
+        {
+          "question": "What is problem decomposition?",
+          "answer": "Problem decomposition is the process of breaking a large or complex problem into smaller, manageable subproblems. Example: A college management system can be divided into student registration, attendance, examinations, fee management, and report generation.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 11
+        },
+        {
+          "question": "What are the benefits of problem decomposition?",
+          "answer": "1. Reduces complexity. 2. Makes planning easier. 3. Supports teamwork. 4. Makes testing easier. 5. Simplifies debugging. 6. Encourages component reuse.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 12
+        },
+        {
+          "question": "What is the top-down approach?",
+          "answer": "The top-down approach starts with the complete problem and progressively divides it into smaller subproblems. Example: Student Result System | |-- Read Marks |-- Validate Marks |-- Calculate Total |-- Calculate Average |-- Determine Grade |-- Display Result",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 13
+        },
+        {
+          "question": "What are dependencies between subproblems?",
+          "answer": "Dependencies occur when one task must be completed before another task can be performed. Example: In a student result system, marks must be entered before validation, and valid marks must be available before calculating the total.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 14
+        },
+        {
+          "question": "What is abstraction?",
+          "answer": "Abstraction means focusing on the important details of a problem while ignoring details that are not necessary for the current task. Example: When using an ATM, a customer can withdraw money without understanding the internal operations of the bank's servers.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 15
+        },
+        {
+          "question": "What is relevant information? Give an example.",
+          "answer": "Relevant information directly contributes to understanding a problem, making a decision, or producing the required result. Example: To calculate attendance percentage, the relevant information is the number of classes attended and the total number of classes conducted. A student's height and favourite colour are not required for this calculation.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 16
+        },
+        {
+          "question": "Explain the different levels of abstraction with an example.",
+          "answer": "A system can be understood at different levels of detail. Example: Online shopping system. • High level: A customer buys a product. • Middle level: Search, shopping cart, payment, and order management. • Low level: Database queries, validation, network requests, and algorithms.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 17
+        },
+        {
+          "question": "Does abstraction mean ignoring all details that appear unimportant?",
+          "answer": "No. Abstraction means ignoring only details that are unnecessary for the current purpose. Information that is irrelevant to one task may be essential to another. Example: Student marks may be irrelevant to attendance calculation, but student identity is important when recording attendance.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 18
+        },
+        {
+          "question": "What is structured problem representation? Name four methods.",
+          "answer": "Structured problem representation means expressing a problem in an organized form so that it becomes easier to understand, analyse, communicate, and solve. Four methods are: 1. Problem statement 2. Input–Process–Output model 3. Flowchart 4. Decision tree Other methods include tables, formulas, and block diagrams.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 19
+        },
+        {
+          "question": "Explain how to represent the problem of finding the largest of two numbers.",
+          "answer": "• Problem statement: Given two numbers, determine which is larger. • Input: Two numbers, A and B. • Process: Compare A and B. • Output: Display the larger number or indicate equality. Pseudocode: START Read A, B IF A > B PRINT \"A is larger\" ELSE IF B > A PRINT \"B is larger\" ELSE PRINT \"Both are equal\" END IF STOP The test cases should include A greater than B, B greater than A, and A equal to B.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation",
+          "source_number": 20
+        }
+      ],
+      "questions": [
+        {
+          "id": "doc-9ca969cfd4d7",
+          "prompt": "What is a problem?",
+          "options": [
+            "A situation with no goal",
+            "A situation where the method to achieve a goal is not immediately clear",
+            "A completed task",
+            "A programming language"
+          ],
+          "correct": 1,
+          "explanation": "A problem is a situation where a goal exists but the method of reaching it is not immediately clear, as Unit I defines it.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q1",
+          "source_page": 23,
+          "source_number": 1,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-fc763ad56ad8",
+          "prompt": "What should be done before selecting a solution?",
+          "options": [
+            "Start coding",
+            "Purchase equipment",
+            "Understand and define the problem",
+            "Select a programming language"
+          ],
+          "correct": 2,
+          "explanation": "Problem identification and framing must come before choosing a solution so the actual need is understood.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q2",
+          "source_page": 23,
+          "source_number": 2,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-c9214e9bba8d",
+          "prompt": "Which is the best problem statement?",
+          "options": [
+            "The canteen needs a new building.",
+            "Students experience long waiting times in the canteen during lunch hours.",
+            "Buy more computers.",
+            "Develop an application immediately."
+          ],
+          "correct": 1,
+          "explanation": "A good problem statement describes the observed difficulty (long canteen waiting times) without prematurely prescribing a fix.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q3",
+          "source_page": 23,
+          "source_number": 3,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-461c863fb69a",
+          "prompt": "Which is an element of a good problem statement?",
+          "options": [
+            "Current situation",
+            "Desired outcome",
+            "Scope of the problem",
+            "All of the above"
+          ],
+          "correct": 3,
+          "explanation": "Unit I says a clear problem statement includes the present situation, the desired result, and the scope.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q4",
+          "source_page": 23,
+          "source_number": 4,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-d6be5aa56ad2",
+          "prompt": "What is the main purpose of problem framing?",
+          "options": [
+            "To start coding immediately",
+            "To express the problem clearly and focus on what needs to be solved",
+            "To ignore the causes",
+            "To select the most expensive solution"
+          ],
+          "correct": 1,
+          "explanation": "Problem framing expresses what needs solving in a clear, focused way rather than jumping straight to implementation.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q5",
+          "source_page": 23,
+          "source_number": 5,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-49a2b6b7ffeb",
+          "prompt": "Requirements describe:",
+          "options": [
+            "Only the cost of a project",
+            "What a solution must do, provide, or satisfy",
+            "Only the programming language",
+            "Only the project title"
+          ],
+          "correct": 1,
+          "explanation": "Requirements state what the proposed solution must do, provide, or satisfy.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 23 · Q6",
+          "source_page": 23,
+          "source_number": 6,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-05c37f31a8db",
+          "prompt": "Which is a functional requirement?",
+          "options": [
+            "The system should be secure.",
+            "The system should be reliable.",
+            "Students should be able to search for books.",
+            "The system should respond quickly."
+          ],
+          "correct": 2,
+          "explanation": "Letting students search books is an action the system must perform, so it is a functional requirement.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q7",
+          "source_page": 24,
+          "source_number": 7,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-1a214d0017d8",
+          "prompt": "Which is a non-functional requirement?",
+          "options": [
+            "Generate examination results",
+            "Search for books",
+            "Calculate attendance",
+            "Protect user information"
+          ],
+          "correct": 3,
+          "explanation": "Protecting user information is a quality/security characteristic, which makes it a non-functional requirement.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q8",
+          "source_page": 24,
+          "source_number": 8,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-e6e2b1136045",
+          "prompt": "What is an expected outcome?",
+          "options": [
+            "A limitation on the project",
+            "A result that should be achieved",
+            "An unverified assumption",
+            "A programming error"
+          ],
+          "correct": 1,
+          "explanation": "An expected outcome describes the result that should follow from solving the problem.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q9",
+          "source_page": 24,
+          "source_number": 9,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-4fdbe2d76d2a",
+          "prompt": "What is the purpose of success criteria?",
+          "options": [
+            "To verify whether the desired outcome has been achieved",
+            "To increase the number of requirements",
+            "To avoid testing",
+            "To select a programming language"
+          ],
+          "correct": 0,
+          "explanation": "Success criteria provide checks for whether the expected outcome was achieved, preferably with measurable targets.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q10",
+          "source_page": 24,
+          "source_number": 10,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-de2e413b0fac",
+          "prompt": "In the IPO model, which component performs operations on input data?",
+          "options": [
+            "Input",
+            "Process",
+            "Output",
+            "Constraint"
+          ],
+          "correct": 1,
+          "explanation": "In the Input–Process–Output model, the Process stage performs the calculations or transformations on input.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q11",
+          "source_page": 24,
+          "source_number": 11,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-c76066851ba0",
+          "prompt": "Which of the following is a constraint?",
+          "options": [
+            "The project must be completed within two weeks.",
+            "The internet is available.",
+            "The input data is correct.",
+            "All users have computers."
+          ],
+          "correct": 0,
+          "explanation": "A mandatory two-week deadline restricts the solution, which makes it a constraint.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q12",
+          "source_page": 24,
+          "source_number": 12,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-4fc60154d3bf",
+          "prompt": "Which is an assumption?",
+          "options": [
+            "The project budget is ₹10,000.",
+            "The project deadline is Friday.",
+            "The internet connection is available.",
+            "Only five computers are available."
+          ],
+          "correct": 2,
+          "explanation": "Assuming internet access is available means treating an unverified condition as true during analysis.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q13",
+          "source_page": 24,
+          "source_number": 13,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-e06090f4e54f",
+          "prompt": "What is the main difference between a constraint and an assumption?",
+          "options": [
+            "They have exactly the same meaning.",
+            "A constraint limits a solution, while an assumption is accepted as true for analysis.",
+            "An assumption always limits the budget.",
+            "A constraint is always unverified."
+          ],
+          "correct": 1,
+          "explanation": "Constraints impose limits; assumptions are statements temporarily accepted as true and should be checked.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 24 · Q14",
+          "source_page": 24,
+          "source_number": 14,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-13a3ace698e8",
+          "prompt": "If a person is eligible to vote at age 18 or above, which is an important boundary case?",
+          "options": [
+            "Age 10",
+            "Age 15",
+            "Age 18",
+            "Age 30 only"
+          ],
+          "correct": 2,
+          "explanation": "Age 18 lies exactly on the threshold for the stated voting rule, making it a boundary case.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q15",
+          "source_page": 25,
+          "source_number": 15,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-9aab9c08fcd5",
+          "prompt": "Which is an important boundary case for an algorithm that finds the largest element in an array?",
+          "options": [
+            "Empty array",
+            "Single-element array",
+            "Array with multiple elements",
+            "All of the above"
+          ],
+          "correct": 3,
+          "explanation": "Empty, single-element, and multi-element arrays all test different important conditions in a largest-element algorithm.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q16",
+          "source_page": 25,
+          "source_number": 16,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-7ffd8bd61b01",
+          "prompt": "Problem decomposition means:",
+          "options": [
+            "Combining all tasks into one large task",
+            "Breaking a complex problem into smaller subproblems",
+            "Ignoring difficult tasks",
+            "Removing all requirements"
+          ],
+          "correct": 1,
+          "explanation": "Decomposition breaks a complex task into smaller manageable subproblems.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q17",
+          "source_page": 25,
+          "source_number": 17,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-109e67d29f12",
+          "prompt": "Which is a benefit of problem decomposition?",
+          "options": [
+            "It makes testing more difficult.",
+            "It prevents teamwork.",
+            "It makes complex problems easier to manage.",
+            "It eliminates the need for planning."
+          ],
+          "correct": 2,
+          "explanation": "Smaller subproblems reduce complexity and make development, planning, and testing easier.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q18",
+          "source_page": 25,
+          "source_number": 18,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-8e49fc109640",
+          "prompt": "The top-down approach starts with:",
+          "options": [
+            "The smallest task",
+            "The complete problem",
+            "The final output only",
+            "A random subproblem"
+          ],
+          "correct": 1,
+          "explanation": "Top-down design begins with the overall problem and progressively splits it into smaller tasks.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q19",
+          "source_page": 25,
+          "source_number": 19,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-7ae534058c00",
+          "prompt": "In a student result system, which task should normally happen before calculating the average?",
+          "options": [
+            "Display the final result",
+            "Validate the marks and calculate the total",
+            "Delete the marks",
+            "Print the grade before processing"
+          ],
+          "correct": 1,
+          "explanation": "Marks must first be checked for validity and added to get the total before calculating the average.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q20",
+          "source_page": 25,
+          "source_number": 20,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-b90512191a4f",
+          "prompt": "What is abstraction?",
+          "options": [
+            "Including every available detail",
+            "Focusing on essential details and ignoring unnecessary ones",
+            "Removing all information",
+            "Making a problem more complex"
+          ],
+          "correct": 1,
+          "explanation": "Abstraction keeps details relevant to the current goal and ignores those that are unnecessary.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 25 · Q21",
+          "source_page": 25,
+          "source_number": 21,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-aec215a29139",
+          "prompt": "Which information is relevant when calculating attendance percentage?",
+          "options": [
+            "Student's favourite colour",
+            "Student's height",
+            "Classes attended and total classes",
+            "Student's favourite sport"
+          ],
+          "correct": 2,
+          "explanation": "Attendance percentage is calculated from classes attended and classes held, not personal preferences or height.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q22",
+          "source_page": 26,
+          "source_number": 22,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-d2090a528c98",
+          "prompt": "When using an ATM, which is an example of abstraction?",
+          "options": [
+            "The user must understand every bank server operation.",
+            "The user can withdraw cash without knowing the internal implementation.",
+            "The user must write a program.",
+            "The user must know the bank's database design."
+          ],
+          "correct": 1,
+          "explanation": "An ATM hides internal banking operations while allowing customers to use essential features: an example of abstraction.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q23",
+          "source_page": 26,
+          "source_number": 23,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-214dff8647dd",
+          "prompt": "Which statement about abstraction is correct?",
+          "options": [
+            "All details must always be ignored.",
+            "Only the appearance of a system matters.",
+            "Relevant details depend on the purpose of the problem.",
+            "Abstraction prevents problem solving."
+          ],
+          "correct": 2,
+          "explanation": "Which information is relevant depends on the actual problem being solved; abstraction is purpose-dependent.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q24",
+          "source_page": 26,
+          "source_number": 24,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-481e6daff927",
+          "prompt": "In an online shopping system, which is a high-level view?",
+          "options": [
+            "A customer buys a product.",
+            "A database query executes.",
+            "A network request is processed.",
+            "A variable is declared."
+          ],
+          "correct": 0,
+          "explanation": "At a high level, online shopping can be described as a customer purchasing a product, without implementation details.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q25",
+          "source_page": 26,
+          "source_number": 25,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-4d3624b5fc26",
+          "prompt": "Which representation is best for identifying inputs, processing, and outputs?",
+          "options": [
+            "IPO model",
+            "Decision tree only",
+            "Paragraph of unrelated text",
+            "Project budget"
+          ],
+          "correct": 0,
+          "explanation": "The IPO model explicitly organizes a solution as inputs, the operations performed, and resulting outputs.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q26",
+          "source_page": 26,
+          "source_number": 26,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-96919c9df416",
+          "prompt": "Which representation uses standard symbols to show the steps of an algorithm?",
+          "options": [
+            "Table",
+            "Flowchart",
+            "Assumption",
+            "Requirement list"
+          ],
+          "correct": 1,
+          "explanation": "A flowchart uses standard visual symbols and arrows to represent an algorithm's steps.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q27",
+          "source_page": 26,
+          "source_number": 27,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-bd0e9ee58afc",
+          "prompt": "Which symbol is commonly used for a decision in a flowchart?",
+          "options": [
+            "Rectangle",
+            "Oval",
+            "Diamond",
+            "Parallelogram"
+          ],
+          "correct": 2,
+          "explanation": "Flowchart decisions are represented by diamonds, which branch according to a condition.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q28",
+          "source_page": 26,
+          "source_number": 28,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-c2af7a8edec1",
+          "prompt": "Which representation is most suitable for organizing values and their corresponding results?",
+          "options": [
+            "Table",
+            "Assumption",
+            "Problem statement only",
+            "Constraint list 26"
+          ],
+          "correct": 0,
+          "explanation": "Tables organize corresponding input values and results for easy comparison.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 26 · Q29",
+          "source_page": 26,
+          "source_number": 29,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        },
+        {
+          "id": "doc-4c0ff5cb286e",
+          "prompt": "Which sequence best represents the overall problem-solving process taught in Unit I?",
+          "options": [
+            "Code → Submit → Stop",
+            "Identify → Define → Specify → Constrain → Decompose → Abstract → Represent → Solve → Verify",
+            "Guess → Build → Ignore → Finish",
+            "Select → Code → Avoid testing"
+          ],
+          "correct": 1,
+          "explanation": "Unit I's process proceeds from identifying and defining the problem through requirements, constraints, decomposition, abstraction, representation, solving, and verification.",
+          "source": "PSCT Unit 1 — Problem Understanding and Representation · PDF p. 27 · Q30",
+          "source_page": 27,
+          "source_number": 30,
+          "source_pdf": "resources/pea101-ed86483e471a.pdf"
+        }
+      ],
+      "notes_summary": "This unit presents problem solving as a clear sequence: describe the real problem without jumping to a solution, identify requirements and measurable outcomes, then account for constraints, assumptions, and boundary cases. It shows how to break a larger task into ordered parts, focus on information relevant to the goal, and represent a solution with inputs, processing, outputs, tables, algorithms, or flowcharts. The canteen, student marks, attendance, and library examples show how to move from a problem statement to a plan that can be checked with test cases."
+    },
+    {
+      "code": "PEA 102",
+      "name": "Engineering Mathematics for Product Engineers",
+      "short": "Mathematical foundations for solving engineering problems.",
+      "icon": "∑",
+      "semester": 1,
+      "resources": [],
+      "qa": [],
+      "questions": []
+    },
+    {
+      "code": "PEA 103",
+      "name": "AI Interaction Design",
+      "short": "Design thoughtful interactions with intelligent systems.",
+      "icon": "◈",
+      "semester": 1,
+      "resources": [],
+      "qa": [],
+      "questions": []
+    },
+    {
+      "code": "PEA 104",
+      "name": "Problem Solving and Object-Oriented Programming Fundamentals",
+      "short": "Explore programming logic and core object-oriented ideas.",
+      "icon": "⌘",
+      "semester": 1,
+      "resources": [
+        {
+          "type": "pdf",
+          "path": "resources/pea104-9eed810bfb08.pdf",
+          "title": "OOPS NOTES",
+          "added": "2026-10-23",
+          "sample": false
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is a class in C++?",
+          "answer": "A blueprint defining data members and member functions. A class defines a reusable blueprint; objects are instances."
+        },
+        {
+          "question": "What is an object?",
+          "answer": "A concrete instance of a class. Objects are created from class definitions and hold instance state."
+        },
+        {
+          "question": "Which access specifier restricts access to class members?",
+          "answer": "private. Private members are inaccessible directly from outside the class."
+        },
+        {
+          "question": "What is encapsulation?",
+          "answer": "Bundling data and methods with controlled access. Encapsulation groups state and behavior while restricting direct access."
+        },
+        {
+          "question": "What is the default access level of members in a C++ class?",
+          "answer": "private. The notes contrast class default private access with struct default public access."
+        },
+        {
+          "question": "Which function is used to read private data through a public interface?",
+          "answer": "A getter. Getters/accessors expose values without direct external access to private fields."
+        },
+        {
+          "question": "Which special function is invoked when an object is initialized?",
+          "answer": "Constructor. Constructors initialize objects at creation."
+        },
+        {
+          "question": "Which special function is associated with object cleanup?",
+          "answer": "Destructor. Destructors run at the end of an object's lifetime to release resources."
+        },
+        {
+          "question": "Which mechanism allows a derived class to reuse a base class?",
+          "answer": "Inheritance. Inheritance establishes base and derived class relationships."
+        },
+        {
+          "question": "Which keyword supports runtime polymorphism for a member function?",
+          "answer": "virtual. Virtual functions enable dynamic dispatch when called through base-class interfaces."
+        },
+        {
+          "question": "What does function overloading mean?",
+          "answer": "Multiple functions share a name with different parameter lists. Overloading is a compile-time polymorphism mechanism."
+        },
+        {
+          "question": "Which declaration indicates a pure virtual function?",
+          "answer": "virtual void show() = 0;. The '= 0' pure virtual specifier makes the function abstract."
+        }
+      ],
+      "questions": [
+        {
+          "id": "editor-PEA104-0",
+          "prompt": "What is a class in C++?",
+          "options": [
+            "A blueprint defining data members and member functions",
+            "A specific object already allocated in memory",
+            "A function call stack",
+            "A pointer to dynamic memory"
+          ],
+          "correct": 0,
+          "explanation": "A class defines a reusable blueprint; objects are instances.",
+          "source": "OOPS NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-1",
+          "prompt": "What is an object?",
+          "options": [
+            "A concrete instance of a class",
+            "A C++ header file",
+            "A namespace alias",
+            "An access specifier"
+          ],
+          "correct": 0,
+          "explanation": "Objects are created from class definitions and hold instance state.",
+          "source": "OOPS NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-2",
+          "prompt": "Which access specifier restricts access to class members?",
+          "options": [
+            "private",
+            "public",
+            "friend",
+            "virtual"
+          ],
+          "correct": 0,
+          "explanation": "Private members are inaccessible directly from outside the class.",
+          "source": "OOPS NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-3",
+          "prompt": "What is encapsulation?",
+          "options": [
+            "Bundling data and methods with controlled access",
+            "Making all data global",
+            "Using only procedural functions",
+            "Allocating every object on the heap"
+          ],
+          "correct": 0,
+          "explanation": "Encapsulation groups state and behavior while restricting direct access.",
+          "source": "OOPS NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-4",
+          "prompt": "What is the default access level of members in a C++ class?",
+          "options": [
+            "private",
+            "public",
+            "protected",
+            "static"
+          ],
+          "correct": 0,
+          "explanation": "The notes contrast class default private access with struct default public access.",
+          "source": "OOPS NOTES",
+          "source_page": 10,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-5",
+          "prompt": "Which function is used to read private data through a public interface?",
+          "options": [
+            "A getter",
+            "A destructor",
+            "An overloaded operator only",
+            "A friend declaration only"
+          ],
+          "correct": 0,
+          "explanation": "Getters/accessors expose values without direct external access to private fields.",
+          "source": "OOPS NOTES",
+          "source_page": 10,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-6",
+          "prompt": "Which special function is invoked when an object is initialized?",
+          "options": [
+            "Constructor",
+            "Destructor",
+            "Namespace",
+            "Preprocessor"
+          ],
+          "correct": 0,
+          "explanation": "Constructors initialize objects at creation.",
+          "source": "OOPS NOTES",
+          "source_page": 16,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-7",
+          "prompt": "Which special function is associated with object cleanup?",
+          "options": [
+            "Destructor",
+            "Constructor",
+            "Getter",
+            "Type alias"
+          ],
+          "correct": 0,
+          "explanation": "Destructors run at the end of an object's lifetime to release resources.",
+          "source": "OOPS NOTES",
+          "source_page": 26,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-8",
+          "prompt": "Which mechanism allows a derived class to reuse a base class?",
+          "options": [
+            "Inheritance",
+            "Encapsulation only",
+            "Recursion",
+            "Template specialization only"
+          ],
+          "correct": 0,
+          "explanation": "Inheritance establishes base and derived class relationships.",
+          "source": "OOPS NOTES",
+          "source_page": 10,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-9",
+          "prompt": "Which keyword supports runtime polymorphism for a member function?",
+          "options": [
+            "virtual",
+            "static",
+            "typedef",
+            "mutable"
+          ],
+          "correct": 0,
+          "explanation": "Virtual functions enable dynamic dispatch when called through base-class interfaces.",
+          "source": "OOPS NOTES",
+          "source_page": 40,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-10",
+          "prompt": "What does function overloading mean?",
+          "options": [
+            "Multiple functions share a name with different parameter lists",
+            "One function is called recursively",
+            "One object is copied bitwise",
+            "A function has no return type"
+          ],
+          "correct": 0,
+          "explanation": "Overloading is a compile-time polymorphism mechanism.",
+          "source": "OOPS NOTES",
+          "source_page": 40,
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        },
+        {
+          "id": "editor-PEA104-11",
+          "prompt": "Which declaration indicates a pure virtual function?",
+          "options": [
+            "virtual void show() = 0;",
+            "void show() const;",
+            "static void show();",
+            "friend void show();"
+          ],
+          "correct": 0,
+          "explanation": "The '= 0' pure virtual specifier makes the function abstract.",
+          "source": "OOPS NOTES",
+          "source_pdf": "resources/pea104-9eed810bfb08.pdf"
+        }
+      ],
+      "notes_summary": "These notes explain object-oriented programming in C++ through classes and objects, then show how encapsulation protects an object’s state with access modifiers and public methods. They cover constructors and destructors, friend functions and operator overloading, and the difference between compile-time overloading and runtime polymorphism with virtual functions. The inheritance sections describe class hierarchies, visibility rules, and the order in which base and derived constructors and destructors run. Code examples and comparison tables connect each idea to practical class design."
+    },
+    {
+      "code": "PEA 105",
+      "name": "Data Structures and Algorithmic Problem Solving",
+      "short": "Learn structures, algorithms, and effective solutions.",
+      "icon": "◇",
+      "semester": 1,
+      "resources": [
+        {
+          "type": "pdf",
+          "path": "resources/pea105-5f4391bfa1c0.pdf",
+          "title": "Memory Organization - Stack vs Heap Lecture Notes",
+          "added": "2026-10-23",
+          "sample": false
+        }
+      ],
+      "qa": [
+        {
+          "question": "What typically manages local automatic variables?",
+          "answer": "Stack memory. Local automatic variables generally have scope-bound storage."
+        },
+        {
+          "question": "What does the new operator request in C++?",
+          "answer": "Dynamic allocation. new allocates dynamic storage and returns an address."
+        },
+        {
+          "question": "Which operator releases memory allocated with scalar new?",
+          "answer": "delete. delete releases storage acquired with scalar new."
+        },
+        {
+          "question": "What does a pointer store?",
+          "answer": "A memory address. Pointers store addresses and can be dereferenced."
+        },
+        {
+          "question": "What does *p mean when p points to an int?",
+          "answer": "The value stored at the pointed-to address. Dereferencing accesses the pointee's value."
+        },
+        {
+          "question": "What does &x evaluate to?",
+          "answer": "The address of x. The address-of operator yields the location of x."
+        },
+        {
+          "question": "What does a double pointer store?",
+          "answer": "The address of another pointer. A pointer-to-pointer stores another pointer variable's address."
+        },
+        {
+          "question": "What does **q access when q points to p and p points to x?",
+          "answer": "The value of x. Two dereferences follow q to p and then to x."
+        },
+        {
+          "question": "How many values are in a standard 3×3 hourglass pattern?",
+          "answer": "7. The hourglass uses three top, one middle, and three bottom elements."
+        },
+        {
+          "question": "How many 3×3 hourglasses fit in a 6×6 matrix?",
+          "answer": "16. There are four horizontal and four vertical starting positions."
+        },
+        {
+          "question": "Why initialize a maximum hourglass sum to INT_MIN?",
+          "answer": "To handle arrays with negative values. INT_MIN allows negative sums to replace the initial value."
+        },
+        {
+          "question": "What is a memory leak?",
+          "answer": "Allocated heap memory becomes unreachable without being released. The notes describe orphaned heap allocations that are never freed."
+        }
+      ],
+      "questions": [
+        {
+          "id": "editor-PEA105-0",
+          "prompt": "What typically manages local automatic variables?",
+          "options": [
+            "Stack memory",
+            "Heap allocations only",
+            "Executable code segment",
+            "Read-only text section"
+          ],
+          "correct": 0,
+          "explanation": "Local automatic variables generally have scope-bound storage.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 13,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-1",
+          "prompt": "What does the new operator request in C++?",
+          "options": [
+            "Dynamic allocation",
+            "Automatic scope cleanup",
+            "Compilation of a class",
+            "Function overloading"
+          ],
+          "correct": 0,
+          "explanation": "new allocates dynamic storage and returns an address.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 15,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-2",
+          "prompt": "Which operator releases memory allocated with scalar new?",
+          "options": [
+            "delete",
+            "free on a new-allocated pointer",
+            "return",
+            "sizeof"
+          ],
+          "correct": 0,
+          "explanation": "delete releases storage acquired with scalar new.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 16,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-3",
+          "prompt": "What does a pointer store?",
+          "options": [
+            "A memory address",
+            "Only an integer's arithmetic value",
+            "The name of a variable",
+            "A C++ keyword"
+          ],
+          "correct": 0,
+          "explanation": "Pointers store addresses and can be dereferenced.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-4",
+          "prompt": "What does *p mean when p points to an int?",
+          "options": [
+            "The value stored at the pointed-to address",
+            "The address of p",
+            "The size of p",
+            "A new allocation"
+          ],
+          "correct": 0,
+          "explanation": "Dereferencing accesses the pointee's value.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-5",
+          "prompt": "What does &x evaluate to?",
+          "options": [
+            "The address of x",
+            "The value of x squared",
+            "A reference to a function only",
+            "The heap size"
+          ],
+          "correct": 0,
+          "explanation": "The address-of operator yields the location of x.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-6",
+          "prompt": "What does a double pointer store?",
+          "options": [
+            "The address of another pointer",
+            "Two integer values",
+            "A pair of arrays",
+            "The sum of two addresses"
+          ],
+          "correct": 0,
+          "explanation": "A pointer-to-pointer stores another pointer variable's address.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-7",
+          "prompt": "What does **q access when q points to p and p points to x?",
+          "options": [
+            "The value of x",
+            "Only the address of q",
+            "The byte size of p",
+            "The name of x"
+          ],
+          "correct": 0,
+          "explanation": "Two dereferences follow q to p and then to x.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-8",
+          "prompt": "How many values are in a standard 3×3 hourglass pattern?",
+          "options": [
+            "7",
+            "5",
+            "8",
+            "9"
+          ],
+          "correct": 0,
+          "explanation": "The hourglass uses three top, one middle, and three bottom elements.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 7,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-9",
+          "prompt": "How many 3×3 hourglasses fit in a 6×6 matrix?",
+          "options": [
+            "16",
+            "9",
+            "12",
+            "36"
+          ],
+          "correct": 0,
+          "explanation": "There are four horizontal and four vertical starting positions.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-10",
+          "prompt": "Why initialize a maximum hourglass sum to INT_MIN?",
+          "options": [
+            "To handle arrays with negative values",
+            "To prevent every loop",
+            "To force the result to zero",
+            "To allocate heap memory"
+          ],
+          "correct": 0,
+          "explanation": "INT_MIN allows negative sums to replace the initial value.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 9,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        },
+        {
+          "id": "editor-PEA105-11",
+          "prompt": "What is a memory leak?",
+          "options": [
+            "Allocated heap memory becomes unreachable without being released",
+            "A variable going out of scope normally",
+            "A successful delete call",
+            "A compiler syntax error"
+          ],
+          "correct": 0,
+          "explanation": "The notes describe orphaned heap allocations that are never freed.",
+          "source": "Memory Organization - Stack vs Heap Lecture Notes",
+          "source_page": 15,
+          "source_pdf": "resources/pea105-5f4391bfa1c0.pdf"
+        }
+      ],
+      "notes_summary": "The notes compare stack and heap memory, explain dynamic allocation with new and delete, and build pointer skills from addresses and dereferencing through pointer-to-pointer relationships. They highlight object lifetimes, memory leaks, and how reassignment or missing cleanup can lose access to allocated memory. The problem-solving sections apply loops and indexing to matrices, including the 3×3 hourglass sum and its valid bounds, then introduce linear and binary search, matrix search, and matrix transformations such as transpose. Worked examples emphasize tracing indices and checking edge cases."
+    },
+    {
+      "code": "PEA 106",
+      "name": "Introduction to Global Coding Competitions",
+      "short": "Discover competitive programming concepts and contests.",
+      "icon": "↗",
+      "semester": 1,
+      "resources": [
+        {
+          "type": "pdf",
+          "path": "resources/pea106-e635ad044039.pdf",
+          "title": "C++ COMPLETE NOTES",
+          "added": "2026-10-23",
+          "sample": false
+        }
+      ],
+      "qa": [
+        {
+          "question": "What does IPO stand for in computer fundamentals?",
+          "answer": "Input, Process, Output. The notes introduce the input-process-output cycle."
+        },
+        {
+          "question": "Which number system uses base 2?",
+          "answer": "Binary. Binary uses two digits and base 2."
+        },
+        {
+          "question": "Which number system uses base 16?",
+          "answer": "Hexadecimal. Hexadecimal uses base 16."
+        },
+        {
+          "question": "Which operator checks equality in C++?",
+          "answer": "==. The notes distinguish assignment (=) from equality comparison (==)."
+        },
+        {
+          "question": "Which construct is used for repeated execution while a condition is true?",
+          "answer": "while loop. The while loop is an iterative control structure."
+        },
+        {
+          "question": "Which statement selects among cases based on an expression?",
+          "answer": "switch. The switch statement supports multi-branch selection."
+        },
+        {
+          "question": "Which loop is commonly written with initialization, condition, and update?",
+          "answer": "for loop. The for-loop syntax groups these three components."
+        },
+        {
+          "question": "Which statement returns a value from a function?",
+          "answer": "return. Functions can send a value back to the caller with return."
+        },
+        {
+          "question": "Which header provides setprecision formatting?",
+          "answer": "<iomanip>. The notes associate setprecision with the iomanip header."
+        },
+        {
+          "question": "What does a base case do in recursion?",
+          "answer": "Stops further recursive calls. The notes describe the base case as the terminating anchor."
+        },
+        {
+          "question": "Which storage duration lets a local variable retain its value across calls?",
+          "answer": "static. A static local variable is initialized once and persists across calls."
+        },
+        {
+          "question": "Which algorithm is highlighted for finding the GCD?",
+          "answer": "Euclidean algorithm. The notes list Euclidean GCD in the functions module."
+        }
+      ],
+      "questions": [
+        {
+          "id": "editor-PEA106-0",
+          "prompt": "What does IPO stand for in computer fundamentals?",
+          "options": [
+            "Input, Process, Output",
+            "Initialize, Print, Open",
+            "Integer, Pointer, Object",
+            "Input, Pointer, Operator"
+          ],
+          "correct": 0,
+          "explanation": "The notes introduce the input-process-output cycle.",
+          "source": "C++ COMPLETE NOTES",
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-1",
+          "prompt": "Which number system uses base 2?",
+          "options": [
+            "Binary",
+            "Decimal",
+            "Octal",
+            "Hexadecimal"
+          ],
+          "correct": 0,
+          "explanation": "Binary uses two digits and base 2.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 36,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-2",
+          "prompt": "Which number system uses base 16?",
+          "options": [
+            "Hexadecimal",
+            "Binary",
+            "Octal",
+            "Decimal"
+          ],
+          "correct": 0,
+          "explanation": "Hexadecimal uses base 16.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 44,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-3",
+          "prompt": "Which operator checks equality in C++?",
+          "options": [
+            "==",
+            "=",
+            "+=",
+            "!="
+          ],
+          "correct": 0,
+          "explanation": "The notes distinguish assignment (=) from equality comparison (==).",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 13,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-4",
+          "prompt": "Which construct is used for repeated execution while a condition is true?",
+          "options": [
+            "while loop",
+            "struct declaration",
+            "return statement",
+            "namespace declaration"
+          ],
+          "correct": 0,
+          "explanation": "The while loop is an iterative control structure.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 78,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-5",
+          "prompt": "Which statement selects among cases based on an expression?",
+          "options": [
+            "switch",
+            "continue",
+            "typedef",
+            "include"
+          ],
+          "correct": 0,
+          "explanation": "The switch statement supports multi-branch selection.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 56,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-6",
+          "prompt": "Which loop is commonly written with initialization, condition, and update?",
+          "options": [
+            "for loop",
+            "do declaration",
+            "class",
+            "return"
+          ],
+          "correct": 0,
+          "explanation": "The for-loop syntax groups these three components.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 27,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-7",
+          "prompt": "Which statement returns a value from a function?",
+          "options": [
+            "return",
+            "include",
+            "namespace",
+            "break only"
+          ],
+          "correct": 0,
+          "explanation": "Functions can send a value back to the caller with return.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-8",
+          "prompt": "Which header provides setprecision formatting?",
+          "options": [
+            "<iomanip>",
+            "<vector>",
+            "<cmath>",
+            "<string>"
+          ],
+          "correct": 0,
+          "explanation": "The notes associate setprecision with the iomanip header.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 100,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-9",
+          "prompt": "What does a base case do in recursion?",
+          "options": [
+            "Stops further recursive calls",
+            "Starts an infinite loop",
+            "Allocates every object on heap",
+            "Declares a global variable"
+          ],
+          "correct": 0,
+          "explanation": "The notes describe the base case as the terminating anchor.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 7,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-10",
+          "prompt": "Which storage duration lets a local variable retain its value across calls?",
+          "options": [
+            "static",
+            "auto",
+            "register",
+            "temporary"
+          ],
+          "correct": 0,
+          "explanation": "A static local variable is initialized once and persists across calls.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 6,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        },
+        {
+          "id": "editor-PEA106-11",
+          "prompt": "Which algorithm is highlighted for finding the GCD?",
+          "options": [
+            "Euclidean algorithm",
+            "Bubble sort",
+            "Dijkstra's algorithm",
+            "Binary search"
+          ],
+          "correct": 0,
+          "explanation": "The notes list Euclidean GCD in the functions module.",
+          "source": "C++ COMPLETE NOTES",
+          "source_page": 97,
+          "source_pdf": "resources/pea106-e635ad044039.pdf"
+        }
+      ],
+      "notes_summary": "This guide moves from programming fundamentals and computer architecture into number systems, C++ syntax, tokens, variables, data types, and operators. It then develops control flow with if/else, switch, while and for loops, nested loops and patterns, followed by functions, recursion, storage classes, and user-defined types such as struct, union, and enum. Examples include number conversions, formatting output, and finding a GCD with the Euclidean algorithm. The closing review stresses compiling, debugging, validating boundary cases, and avoiding common mistakes such as confusing assignment with equality."
+    }
+  ],
+  "announcements": [
+    {
+      "id": "welcome-sem1",
+      "title": "Semester 1 is open",
+      "message": "Explore the six PEA Semester 1 subjects. More faculty resources will be added as they are received.",
+      "date": "2026-10-23",
+      "subject": null
+    },
+    {
+      "id": "n-d1d9abbacfb9",
+      "title": "New PEA 101 resource",
+      "message": "PSCT Unit 1 — Problem Understanding and Representation is now available to study.",
+      "date": "2026-10-23",
+      "subject": "PEA 101"
+    },
+    {
+      "id": "n-cbc8b8ab3eb1",
+      "title": "New PEA 104 resource",
+      "message": "OOPS NOTES is now available to study.",
+      "date": "2026-10-23",
+      "subject": "PEA 104"
+    },
+    {
+      "id": "n-abb119236ac3",
+      "title": "New PEA 105 resource",
+      "message": "Memory Organization - Stack vs Heap Lecture Notes is now available to study.",
+      "date": "2026-10-23",
+      "subject": "PEA 105"
+    },
+    {
+      "id": "n-58bad7cc7db2",
+      "title": "New PEA 106 resource",
+      "message": "C++ COMPLETE NOTES is now available to study.",
+      "date": "2026-10-23",
+      "subject": "PEA 106"
+    }
+  ]
+}
